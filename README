@@ -1,0 +1,21 @@
+[Global]
+sudo apt-get install git-core
+git config --global user.name "valery1707"
+git config --global user.email "valery1707___"
+
+[Init repo]
+cd ~
+git init
+echo '*' > .gitignore
+git remote add origin https://valery1707@github.com/valery1707/test.git
+
+[Change]
+git add -f new_file_name.ext
+git commin -m 'comment for commit'
+
+[Push to github]
+git push origin master
+
+[Poll from github]
+
+
