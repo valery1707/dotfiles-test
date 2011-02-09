@@ -11,7 +11,7 @@ git remote add origin https://valery1707@github.com/valery1707/test.git
 
 [Change]
 git add -f new_file_name.ext
-git commin -m 'comment for commit'
+git commit -m 'comment for commit'
 
 [Push to github]
 git push origin master
