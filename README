@@ -17,7 +17,7 @@ git init
 
 [Add remote]
 #Work over HTTPS
-git remote add origin https://valery1707@github.com/valery1707/test.git
+git remote add origin https://valery1707@github.com/valery1707/dotfiles-test.git
 #Work over SSH (will use ~/.ssh/id_rsa and ~/.shh/id_rsa.pub, read: http://help.github.com/msysgit-key-setup/)
 git remote add origin git@github.com:valery1707/dotfiles-test.git
 
