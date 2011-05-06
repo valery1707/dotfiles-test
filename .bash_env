@@ -1,0 +1,4 @@
+## Some useful environment properties
+#export GIT_PROXY_COMMAND=~/bin/proxy-wrapper
+#export http_proxy=http://127.0.0.1:3128/
+
