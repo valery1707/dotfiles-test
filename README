@@ -13,6 +13,7 @@ echo '*' > .gitignore
 cd ~
 git init
 >>[Add remote]
+>>[Config branch]
 >>[Pull from github]
 
 [Add remote]
@@ -25,8 +26,12 @@ git remote add origin git@github.com:valery1707/dotfiles-test.git
 git add -f new_file_name.ext
 git commit -m 'comment for commit'
 
+[Config branch]
+git config branch.master.remote origin
+git config branch.master.merge master
+
 [Push to github]
-git push origin master
+git push
 
 [Pull from github]
-git pull origin master
+git pull
