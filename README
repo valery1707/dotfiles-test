@@ -1,7 +1,8 @@
 [Global]
 sudo apt-get install git-core
+ssh-keygen -t rsa -C "valery1707@some-ident-info"
 git config --global user.name "valery1707"
-git config --global user.email "valery1707___"
+git config --global user.email "valery1707@some-ident-info"
 
 [Create repo]
 cd ~
