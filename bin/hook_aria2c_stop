@@ -1,0 +1,3 @@
+#!/bin/sh
+~/bin/hook_aria2c "Download stop" $*
+

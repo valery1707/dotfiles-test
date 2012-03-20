@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "$1 for GID [$2] ($3 files) to $4" | sendxmpp valery1707@gmail.com 2> /dev/null
