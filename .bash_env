@@ -1,4 +1,4 @@
 ## Some useful environment properties
 #export GIT_PROXY_COMMAND=~/bin/proxy-wrapper
 #export http_proxy=http://127.0.0.1:3128/
-
+export MAVEN_OPTS="-Dmaven.artifact.threads=1 -showversion -Xmx512M -XX:MaxPermSize=512m"
