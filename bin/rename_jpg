@@ -1,0 +1,3 @@
+#!/bin/sh
+exiv2 -t rename -r '%Y-%m-%d_%H-%M-%S' *.jpg *.JPG *.jpeg *.JPEG
+
