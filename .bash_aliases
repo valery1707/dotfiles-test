@@ -4,6 +4,8 @@ alias lsusb='lsusb -tv'
 alias wanip='curl --silent http://ifconfig.me'
 alias wanhost='host valery1707.no-ip.info'
 
+function telnet.ssl () { echo openssl s_client -connect $1:${2:-443} ;}
+
 if [ -f /usr/bin/grc ]; then
   alias ll='grc ls -lFh --color=yes'
   alias ping="grc ping"
