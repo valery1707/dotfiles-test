@@ -1,1 +1,6 @@
 bind ^Y cut all
+
+## Markdown syntax highlighting
+## Found: https://unbrokenspectrum.wordpress.com/2012/10/05/markdown-syntax-highlighting-in-vim-and-nano-in-ubuntu/
+## Usage: wget https://raw.github.com/serialhex/nano-highlight/master/markdown.nanorc
+include ~/markdown.nanorc
