@@ -42,6 +42,19 @@ fi
 # create a new session, named $SESSION, and detach from it
 tmux -2 new-session -d -s $SESSION
 
+# Now populate the session with the windows you use every day
+if [ -f ~/.tmux_w.conf ]; then
+	echo Loading windows from .tmux_w.conf
+	pos=1
+	cat ~/.tmux_w.conf | while read line
+	do
+		echo "New window ($pos) in $line"
+		tmux new-window -t $SESSION:$pos -k -d -c $line
+		pos=$(($pos + 1))
+	done
+fi
+
+
 # all done. select starting window and get to work
 # you may need to cycle through windows and type in passwords
 # if you don't use ssh keys
