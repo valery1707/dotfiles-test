@@ -1,0 +1,14 @@
+for f in *.THM; do
+	f_name=${f%.*}
+	# Если существует соответствующий AVI-файл
+	if [ -e "${f_name}.AVI" ] ; then
+		# Данные EXIF | только метка времени | только время | убираем первый пробел | форматируем строку
+		f_time=$(exiv2 print "$f" | grep "Image timestamp : " | cut -d ':' -f2-6 | cut -d ' ' -f2-3 | tr ':' '-' | tr ' ' '_')
+		# Если нужно переименовывать
+		if [ "${f_name}" != "${f_time}" ] ; then
+			echo "${f_name} -> ${f_time}"
+			mv "${f_name}.AVI" "${f_time}.AVI"
+			mv "${f_name}.THM" "${f_time}.THM"
+		fi
+	fi
+done
