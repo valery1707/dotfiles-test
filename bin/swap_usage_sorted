@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo ~/bin/swap_usage | sed -r 's!(PID=[0-9]+ swapped|Overall swap_used:) ([0-9]+)( KB)(.*)!echo \1 $(awk -v val=\2 -f ~/bin/sizeToHuman.awk)"\4"!ge' | sort --reverse --human-numeric-sort --key=3
