@@ -21,7 +21,7 @@ mv .bashrc .bashrc.orig
 ### Add remote
 * Work over HTTPS:
     `git remote add origin https://valery1707@github.com/valery1707/dotfiles-test.git`
-* Work over SSH ([will use ~/.ssh/id_rsa and ~/.shh/id_rsa.pub](http://help.github.com/msysgit-key-setup/)):
+* Work over SSH ([will use ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub](http://help.github.com/msysgit-key-setup/)):
     `git remote add origin git@github.com:valery1707/dotfiles-test.git`
 
 ### Config branch
