@@ -8,12 +8,14 @@ git config --global user.email "valery1707@some-ident-info"
 
 ### Use repo
 ```bash
-cd ~`
+cd ~
 git init
 mv .bashrc .bashrc.orig
 ```
 [Add remote](#add-remote)
+
 [Config branch](#config-branch)
+
 [Pull from github](#pull-from-github)
 
 ### Add remote
